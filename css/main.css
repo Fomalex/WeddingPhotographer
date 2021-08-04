@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Yeseva One Regular';
+    src: url("../fonts/YesevaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: url("../fonts/MullerBold.ttf");
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: url("../fonts/MullerRegular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: 'Muller Regular', sans-serif;
+}
+
+#header {
+    background: #FDFDFD;
+    box-shadow: 0 4px 20px rgba(189, 141, 153, 0.2);
+}
+
+#header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+}
+
+.logo {
+    width: 102px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 488px;
+    margin-left: 239px;
+}
+
+#menu a.menu-item {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #BD8D99;
+    text-decoration: none;
+}
+
+#menu a.menu-item:hover {
+    color: #4B0012;
+}
+
+#main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 120px 0;
+}
+
+.title {
+    font-family: 'Yeseva One Regular', sans-serif;
+    font-size: 34px;
+    line-height: 44px;
+    color: #4B0012;
+}
+
+.title.main_title {
+    text-align: center;
+    font-size: 38px;
+}
+
+.title.main_title span {
+    display: inline-block;
+    max-width: 615px;
+}
+
+#main_cards {
+    margin: 50px auto 0 auto;
+    max-width: 1110px;
+}
+
+#main_cards .main_card {
+    justify-content: center;
+}
+
+#main_cards .main_card img {
+    max-width: 350px;
+}
+
+button.slick-prev:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Vector.png");
+    top: 0;
+    left: 0;
+}
+
+button.slick-next:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Vector_2.png");
+    top: 0;
+    left: 0;
+}
+
+button.slick-prev {
+    height: 42px;
+    width: 23.5px;
+}
+
+button.slick-next {
+    height: 42px;
+    width: 23.5px;
+}
+
+#photo_session_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding-bottom: 120px;
+}
+
+#photo_session_container .title {
+    grid-column: 1/3;
+}
+
+#photo_session_packages {
+    margin-top: 43px;
+    border: 0;
+    max-width: 730px;
+}
+
+#photo_session_packages ul li a {
+    font-family: 'Muller Regular', sans-serif;
+    padding: 20px 30px;
+    color: #B08989;
+    width: 173px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#photo_session_packages ul li {
+    margin-right: 10px;
+    background: transparent;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #FCF2F2;
+    box-sizing: border-box;
+    border-bottom: transparent;
+}
+
+#photo_session_packages ul li:last-child {
+    margin-right: 0;
+}
+
+#photo_session_packages ul li:hover {
+    background: #FCF2F2;
+    border: 1px solid #FCF2F2;
+}
+
+#photo_session_packages ul li:hover a {
+    color: #4B0012;
+}
+
+#photo_session_packages ul li.ui-state-active {
+    background: #FCF2F2;
+    border: 1px solid #FCF2F2;
+}
+
+#photo_session_packages ul li.ui-state-active a {
+    color: #4B0012;
+}
+
+#photo_session_packages ul {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    line-height: 1;
+}
+
+#photo_session_packages .package {
+    padding: 40px 28px 24px 28px;
+    background: #FCF2F2;
+}
+
+#photo_session_packages .package .package_title {
+    font-family: 'Muller Bold', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4B0012;
+    margin-bottom: 10px;
+}
+
+#photo_session_packages .package .package_item {
+    font-family: 'Muller Regular', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1E0108;
+    padding: 6px 0;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+}
+
+#photo_session_packages .package .package_item::before {
+    content: '';
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    background: #4B0012;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+#photo_session_image {
+    max-width: 335px;
+    margin-top: 75px;
+}
+
+#photo_session_image img {
+    max-width: 100%;
+}
+
+.title.questions_title {
+    text-align: center;
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#questions_accordion {
+    margin-top: 45px;
+    width: 928px;
+}
+
+#questions_accordion .question_text {
+    background: #FCF2F2;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Muller Bold", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #4B0012;
+    margin-bottom: 15px;
+    padding: 30px 86px 30px 25px;
+    transition: all 0.5s linear;
+}
+
+#questions_accordion .question_text::after {
+    content: url("../images/next.png");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    right: 33px;
+}
+
+#questions_accordion .question_text.ui-state-active {
+    border-radius: 10px 10px 0 0;
+}
+
+#questions_accordion .question_text.ui-state-active::after {
+    content: url("../images/previous.png");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    right: 33px;
+}
+
+#questions_accordion .question_answer {
+    font-family: 'Muller Regular', sans-serif;
+    background: transparent;
+    border-radius: 0 0 10px 10px;
+    color: #B08989;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    /*padding: 30px 33px 30px 25px;*/
+    padding-right: 86px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#questions_accordion .question_answer ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+#footer {
+    background: #FCF4F4;
+}
+
+#footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 13px 0;
+}
+
+#rights {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(189, 141, 153, 0.5);
+    justify-self: center;
+}
